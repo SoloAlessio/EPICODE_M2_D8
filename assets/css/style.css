@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +6,18 @@
 }
 body{
     font-size: 16px;
-    font-family: monospace;
-    background: #f6f6f6;
+    font-family: 'Poppins', sans-serif;    
+    background: #826AED;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 #display{
     font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -23,26 +27,44 @@ body{
     border-radius: 8px;
     padding: 4px 12px;
     border: none;
-    background-color: #fff;
-    box-shadow: 0 8px 32px rgba(25, 25, 25, .15);
+    background-color: #FFB7FF;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(25, 25, 25, .10);
 }
 .calculator{
     width: 20%;
     height: 50%;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #826AED;
+    box-shadow: 0 16px 24px rgba(25, 25, 25, .20);
+    border: 2px solid #FFB7FF;
 }
 .section{
     width: 100%;
     display: grid;
-    gap: 8px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%;
 }
 .section button{
     border: none;
+    margin: 4px;
     padding: 12px 4px;
-    background-color: #fff;
-    color: #252525;
+    background-color: #FFB7FF;
+    color: #fff;
     box-shadow: 0 4px 12px rgba(25, 25, 25, .10);
     border-radius: 8px;
     font-size: 16px;
+    font-weight: 600;
+}
+
+button.operator{
+ background-color: #C879FF;
+ color: #ffffff;
+}
+
+h1{
+    color: #CAFF8A;
+    margin-bottom: 24px;
+    font-weight: 700;
 }

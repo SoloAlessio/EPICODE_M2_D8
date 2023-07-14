@@ -37,7 +37,7 @@ window.onload = function() {
                         risultato = operator1 - operator2;
                         break;
             
-                    case "*":
+                    case "×":
                         risultato = operator1 * operator2;
                         break;
             
